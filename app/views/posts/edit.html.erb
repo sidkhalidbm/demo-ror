@@ -1,0 +1,12 @@
+<h1>Create a new post!</h1>
+<div class="col-10 align-items-center form-group">
+    <%= form_with model: @post do |f| %>
+        <%= f.label :title %>
+        <%= f.text_field :title, class:"form-control" %>
+        <br/>
+        <%= f.label :body %>
+        <%= f.text_area :body, class:"form-control" %>
+        <br/>
+        <%= f.submit 'Post it', class:"btn btn-dark bg-dark d-flex justify-content-end" %>
+    <% end %>
+</div>
